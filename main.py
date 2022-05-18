@@ -12,7 +12,7 @@ def shorten_link(headers, url):
     }
     response = requests.post(
         "https://api-ssl.bitly.com/v4/bitlinks",
-        headers=parameters,
+        headers=headers,
         json=body
     )
     response.raise_for_status()
